@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="hibernate.entity.student" table="stu-infoo">
+<id name ="id">
+<generator class= "sequence">
+<param name ="sequence">stu_seq</param>
+</generator>
+</id>
+<property name ="name"  column="stu-name"></property>
+<property name ="rollNo" column="stu_rollNo"></property>
+<property name ="gender" column="stu_gender"></property>
+
+</class>
+</hibernate-mapping>
